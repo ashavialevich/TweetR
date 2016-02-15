@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="TWRCDTweet" representedClassName="TWRCDTweet" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="parseID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tweetContent" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TWRCDUser" inverseName="tweets" inverseEntity="TWRCDUser" syncable="YES"/>
+    </entity>
+    <entity name="TWRCDUser" representedClassName="TWRCDUser" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parseID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TWRCDTweet" inverseName="user" inverseEntity="TWRCDTweet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TWRCDUser" positionX="-9198" positionY="-3879" width="128" height="103"/>
+        <element name="TWRCDTweet" positionX="-8930" positionY="-3852" width="128" height="103"/>
+    </elements>
+</model>

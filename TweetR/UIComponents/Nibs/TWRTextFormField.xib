@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWRTextFormField">
+            <connections>
+                <outlet property="dividerView" destination="V0A-xJ-IU5" id="yF7-if-5NH"/>
+                <outlet property="textField" destination="gVu-vr-gu7" id="L8k-Oo-kqA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="er1-AP-585"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVu-vr-gu7">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-xJ-IU5" userLabel="DividerView">
+                    <rect key="frame" x="0.0" y="79" width="400" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="U43-1N-ct9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gVu-vr-gu7" secondAttribute="bottom" id="1BB-87-mFl"/>
+                <constraint firstAttribute="trailing" secondItem="gVu-vr-gu7" secondAttribute="trailing" id="Rlv-hL-wi0"/>
+                <constraint firstItem="gVu-vr-gu7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WCX-Nl-KwM"/>
+                <constraint firstItem="V0A-xJ-IU5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="azW-RK-xm0"/>
+                <constraint firstAttribute="bottom" secondItem="V0A-xJ-IU5" secondAttribute="bottom" id="bVE-VN-9OO"/>
+                <constraint firstItem="gVu-vr-gu7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m7g-Ih-Oul"/>
+                <constraint firstAttribute="trailing" secondItem="V0A-xJ-IU5" secondAttribute="trailing" id="pO6-kF-iQ3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="352" y="222"/>
+        </view>
+    </objects>
+</document>

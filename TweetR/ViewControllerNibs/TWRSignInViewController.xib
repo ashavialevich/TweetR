@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWRSignInViewController">
+            <connections>
+                <outlet property="formView" destination="XbB-oh-aNs" id="xkQ-qV-A3y"/>
+                <outlet property="passwordField" destination="WW3-Na-zeu" id="wbK-Pp-CGD"/>
+                <outlet property="signInButton" destination="YMj-de-0dH" id="IHk-DC-4Dq"/>
+                <outlet property="usernameField" destination="LC4-ql-Pq4" id="DD3-6E-EnY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tweeter_logo_blue" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-2e-xNU">
+                    <rect key="frame" x="288" y="31" width="25" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Q0T-ET-7oM"/>
+                        <constraint firstAttribute="width" constant="25" id="up1-08-nzn"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjo-w6-eqC" userLabel="CloseButton">
+                    <rect key="frame" x="524" y="31" width="76" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="iNI-ZI-Ty4"/>
+                        <constraint firstAttribute="height" constant="22" id="zR0-rn-f9H"/>
+                    </constraints>
+                    <state key="normal" image="close_button"/>
+                    <connections>
+                        <action selector="closeButtonClick:" destination="-1" eventType="touchUpInside" id="9cI-ei-0Ji"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to TweetR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQm-Su-lwq">
+                    <rect key="frame" x="8" y="65" width="584" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbB-oh-aNs" customClass="TWRFormView">
+                    <rect key="frame" x="8" y="94" width="584" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-ql-Pq4" userLabel="UsernameField" customClass="TWRTextFormField">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WW3-Na-zeu" userLabel="PasswordField" customClass="TWRTextFormField">
+                            <rect key="frame" x="0.0" y="44" width="584" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WW3-Na-zeu" secondAttribute="trailing" id="Gbz-g1-KT4"/>
+                        <constraint firstItem="LC4-ql-Pq4" firstAttribute="height" secondItem="WW3-Na-zeu" secondAttribute="height" id="JlB-38-zT1"/>
+                        <constraint firstAttribute="height" constant="88" id="Rd4-CG-vUh"/>
+                        <constraint firstItem="WW3-Na-zeu" firstAttribute="top" secondItem="LC4-ql-Pq4" secondAttribute="bottom" id="VoD-f8-DUE"/>
+                        <constraint firstAttribute="trailing" secondItem="LC4-ql-Pq4" secondAttribute="trailing" id="bP1-Oh-U2a"/>
+                        <constraint firstItem="LC4-ql-Pq4" firstAttribute="leading" secondItem="XbB-oh-aNs" secondAttribute="leading" id="brO-5S-eyt"/>
+                        <constraint firstItem="WW3-Na-zeu" firstAttribute="leading" secondItem="XbB-oh-aNs" secondAttribute="leading" id="gaS-yA-sPu"/>
+                        <constraint firstItem="LC4-ql-Pq4" firstAttribute="top" secondItem="XbB-oh-aNs" secondAttribute="top" id="slR-ME-xhg"/>
+                        <constraint firstAttribute="bottom" secondItem="WW3-Na-zeu" secondAttribute="bottom" id="yP3-R2-peJ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMj-de-0dH" userLabel="SigninButton" customClass="TWRButton">
+                    <rect key="frame" x="10" y="190" width="580" height="40"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.63137254899999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EYd-vY-jQT"/>
+                    </constraints>
+                    <state key="normal" title="SIGN IN"/>
+                    <connections>
+                        <action selector="singinClick:" destination="-1" eventType="touchUpInside" id="mCP-CI-bbQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YMj-de-0dH" firstAttribute="top" secondItem="XbB-oh-aNs" secondAttribute="bottom" constant="8" id="8HP-1u-Dyp"/>
+                <constraint firstItem="tm4-2e-xNU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dx4-gk-fQx"/>
+                <constraint firstAttribute="trailing" secondItem="xjo-w6-eqC" secondAttribute="trailing" id="IIq-9b-B4k"/>
+                <constraint firstAttribute="trailing" secondItem="NQm-Su-lwq" secondAttribute="trailing" constant="8" id="NC7-8q-9nu"/>
+                <constraint firstAttribute="trailing" secondItem="YMj-de-0dH" secondAttribute="trailing" constant="10" id="Nkb-lA-ulL"/>
+                <constraint firstItem="NQm-Su-lwq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="Vbl-Nd-2Np"/>
+                <constraint firstItem="XbB-oh-aNs" firstAttribute="top" secondItem="NQm-Su-lwq" secondAttribute="bottom" constant="8" id="eB6-w2-sQS"/>
+                <constraint firstAttribute="trailing" secondItem="XbB-oh-aNs" secondAttribute="trailing" constant="8" id="gya-Wc-yTh"/>
+                <constraint firstItem="NQm-Su-lwq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="j68-LJ-K8U"/>
+                <constraint firstItem="xjo-w6-eqC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="mlP-98-KvQ"/>
+                <constraint firstItem="YMj-de-0dH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="oAj-mb-DkT"/>
+                <constraint firstItem="XbB-oh-aNs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="yaD-tQ-Y2O"/>
+                <constraint firstItem="tm4-2e-xNU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="zL2-ZP-usP"/>
+            </constraints>
+            <point key="canvasLocation" x="479" y="358"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_button" width="16" height="16"/>
+        <image name="tweeter_logo_blue" width="25" height="21"/>
+    </resources>
+</document>

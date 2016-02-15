@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWRAuthenticationViewController">
+            <connections>
+                <outlet property="signinButton" destination="kqt-YL-Fdc" id="BSE-lD-Ntr"/>
+                <outlet property="signupButton" destination="HAH-dr-tiv" id="kMy-6a-nAQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="zRM-lp-d59" id="pBz-qc-JTB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to TweetR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRM-lp-d59" userLabel="WelcomeLabel">
+                    <rect key="frame" x="20" y="448" width="560" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-dr-tiv" customClass="TWRButton">
+                    <rect key="frame" x="10" y="494" width="580" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7jA-vx-AFm"/>
+                    </constraints>
+                    <state key="normal" title="SIGN UP"/>
+                    <connections>
+                        <action selector="signUpClick:" destination="-1" eventType="touchUpInside" id="E4F-c0-eTT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqt-YL-Fdc" customClass="TWRButton">
+                    <rect key="frame" x="10" y="550" width="580" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="n3N-IL-6Ly"/>
+                    </constraints>
+                    <state key="normal" title="SIGN IN"/>
+                    <connections>
+                        <action selector="signInClick:" destination="-1" eventType="touchUpInside" id="f2e-Eh-xzX"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tweet_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="w1e-Ns-rxE">
+                    <rect key="frame" x="240" y="240" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="YNs-ed-Zb6"/>
+                        <constraint firstAttribute="height" constant="120" id="dVe-ce-B4l"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.1137254902" green="0.63137254899999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w1e-Ns-rxE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DxT-tY-2Ma"/>
+                <constraint firstItem="HAH-dr-tiv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Fp0-5R-eWJ"/>
+                <constraint firstItem="kqt-YL-Fdc" firstAttribute="top" secondItem="HAH-dr-tiv" secondAttribute="bottom" constant="16" id="G4c-Db-8U2"/>
+                <constraint firstItem="zRM-lp-d59" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="TdY-gg-mpJ"/>
+                <constraint firstItem="HAH-dr-tiv" firstAttribute="top" secondItem="zRM-lp-d59" secondAttribute="bottom" constant="25" id="bpU-UZ-fIu"/>
+                <constraint firstAttribute="bottom" secondItem="kqt-YL-Fdc" secondAttribute="bottom" constant="10" id="c9O-3R-k37"/>
+                <constraint firstItem="kqt-YL-Fdc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="cTF-Xa-S1X"/>
+                <constraint firstItem="w1e-Ns-rxE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jzS-et-Z2E"/>
+                <constraint firstAttribute="trailing" secondItem="HAH-dr-tiv" secondAttribute="trailing" constant="10" id="qFd-cB-03f"/>
+                <constraint firstAttribute="trailing" secondItem="kqt-YL-Fdc" secondAttribute="trailing" constant="10" id="t1s-dX-h5l"/>
+                <constraint firstAttribute="trailing" secondItem="zRM-lp-d59" secondAttribute="trailing" constant="20" id="wEQ-1m-8jN"/>
+            </constraints>
+            <point key="canvasLocation" x="599" y="287"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tweet_logo_white" width="60" height="60"/>
+    </resources>
+</document>

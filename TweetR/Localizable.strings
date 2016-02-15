@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  TweetR
+
+  Created by Alex Shavialevich on 2/6/16.
+  Copyright © 2016 Alex Shavialevich. All rights reserved.
+*/
+
+// Generic Strings
+"ok"="OK";
+
+// Alert Views
+"alert_view_generic_error_title"="We Are Sorry...";
+"alert_view_generic_error_message"="Something with our services isn't working. We appologize for any inconveniences as our team is making every effort to fix the issue. Please try again later.";
+"alert_view_tweet_success_title"="Success!!!";
+"alert_view_tweet_success_message"="Your tweet has been successfully posted to your feed.";
+
+// Text Field Forms
+"text_field_form_username_hint"="username";
+"text_field_form_email_hint"="email";
+"text_field_form_password_hint"="password";
+"text_field_form_confirm_password_hint"="confirm password";
+"text_field_form_error_title"="Form Error";
+"text_field_form_username_empty_error"="Username field is required.";
+"text_field_form_email_empty_error"="Email field is required.";
+"text_field_form_password_empty_error"="Password field is required.";
+"text_field_form_confirm_password_empty_error"="Confirm password field is required.";
+"text_field_form_multiple_error"= "Please fill out all the required fields.";
+"text_field_form_password_dont_match_error"="Password and confirm password fields should match.";
+"text_field_form_email_invalid_error"="Please enter valid email address";

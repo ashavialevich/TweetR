@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BFDC3023155EE9483CE388 /* libPods-TweetR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDDA651136B759F6691B237 /* libPods-TweetR.a */; };
+		AA84FDF0C55F4FAF05E79510 /* libPods-TweetRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3D21CF10C3E23170884C7 /* libPods-TweetRTests.a */; };
+		FA299C8C1C6677B400ACD4A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA299C8B1C6677B400ACD4A0 /* main.m */; };
+		FA299C8F1C6677B400ACD4A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA299C8E1C6677B400ACD4A0 /* AppDelegate.m */; };
+		FA299C981C6677B400ACD4A0 /* TweetR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA299C961C6677B400ACD4A0 /* TweetR.xcdatamodeld */; };
+		FA299C9A1C6677B400ACD4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA299C991C6677B400ACD4A0 /* Assets.xcassets */; };
+		FA299C9D1C6677B400ACD4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA299C9B1C6677B400ACD4A0 /* LaunchScreen.storyboard */; };
+		FA299CA81C6677B400ACD4A0 /* TweetRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA299CA71C6677B400ACD4A0 /* TweetRTests.m */; };
+		FA299CB31C6677B400ACD4A0 /* TweetRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA299CB21C6677B400ACD4A0 /* TweetRUITests.m */; };
+		FA299CC51C667D7900ACD4A0 /* TWRAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA299CC31C667D7900ACD4A0 /* TWRAuthenticationViewController.m */; };
+		FA299CC81C667DBD00ACD4A0 /* TWRAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA299CC71C667DBD00ACD4A0 /* TWRAuthenticationViewController.xib */; };
+		FA54453E1C722F00006EC1BD /* TWRCoreDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5445371C722F00006EC1BD /* TWRCoreDataClient.m */; };
+		FA54453F1C722F00006EC1BD /* TWRDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5445391C722F00006EC1BD /* TWRDataStore.m */; };
+		FA5445401C722F00006EC1BD /* TWRParseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54453B1C722F00006EC1BD /* TWRParseClient.m */; };
+		FA5445411C722F00006EC1BD /* TWRWebServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54453D1C722F00006EC1BD /* TWRWebServiceClient.m */; };
+		FA7025351C67B44C0007D75B /* TWRSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7025331C67B44C0007D75B /* TWRSignInViewController.m */; };
+		FA7025381C67B47A0007D75B /* TWRSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7025371C67B47A0007D75B /* TWRSignInViewController.xib */; };
+		FA70253C1C67C1FB0007D75B /* TWRTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA70253A1C67C1FB0007D75B /* TWRTweetViewController.m */; };
+		FA70253F1C67C20D0007D75B /* TWRTweetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA70253E1C67C20D0007D75B /* TWRTweetViewController.xib */; };
+		FA7F4ED31C71454B00F1F88E /* TWRBaseFormFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7F4ECB1C71454B00F1F88E /* TWRBaseFormFieldView.m */; };
+		FA7F4ED41C71454B00F1F88E /* TWRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7F4ECD1C71454B00F1F88E /* TWRButton.m */; };
+		FA7F4ED51C71454B00F1F88E /* TWRFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7F4ECF1C71454B00F1F88E /* TWRFormView.m */; };
+		FA7F4ED61C71454B00F1F88E /* TWRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7F4ED11C71454B00F1F88E /* TWRTextFormField.m */; };
+		FA7F4ED81C71456700F1F88E /* TWRTextFormField.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7F4ED71C71456700F1F88E /* TWRTextFormField.xib */; };
+		FA7F4EE01C715C2200F1F88E /* TWRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7F4EDF1C715C2200F1F88E /* TWRConstants.m */; };
+		FA95A83A1C66858600BDB681 /* TWRAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA95A8391C66858600BDB681 /* TWRAuthenticationManager.m */; };
+		FA95A83E1C668E2C00BDB681 /* TWRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA95A83C1C668E2C00BDB681 /* TWRSignUpViewController.m */; };
+		FA95A8411C668E4700BDB681 /* TWRSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA95A8401C668E4700BDB681 /* TWRSignUpViewController.xib */; };
+		FA95A8441C66903800BDB681 /* TWRErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FA95A8431C66903800BDB681 /* TWRErrorHandler.m */; };
+		FA95A84A1C6699EF00BDB681 /* TWRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA95A8491C6699EF00BDB681 /* TWRBaseViewController.m */; };
+		FA9CB11D1C69403000ABCB4D /* TWRTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB11A1C69403000ABCB4D /* TWRTweet.m */; };
+		FA9CB11E1C69403000ABCB4D /* TWRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB11C1C69403000ABCB4D /* TWRUser.m */; };
+		FA9CB1231C69406100ABCB4D /* TWRTweetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB1221C69406100ABCB4D /* TWRTweetViewModel.m */; };
+		FA9CB12C1C69423000ABCB4D /* TWRCDUser+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB1251C69423000ABCB4D /* TWRCDUser+CoreDataProperties.m */; };
+		FA9CB12D1C69423000ABCB4D /* TWRCDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB1271C69423000ABCB4D /* TWRCDUser.m */; };
+		FA9CB12E1C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB1291C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.m */; };
+		FA9CB12F1C69423000ABCB4D /* TWRCDTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CB12B1C69423000ABCB4D /* TWRCDTweet.m */; };
+		FAB0DD5C1C724E4B005EDFA1 /* TWRCompareValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0DD521C724E4B005EDFA1 /* TWRCompareValidator.m */; };
+		FAB0DD5D1C724E4B005EDFA1 /* TWRErrorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0DD541C724E4B005EDFA1 /* TWRErrorProvider.m */; };
+		FAB0DD5E1C724E4B005EDFA1 /* TWRRegularExpressionValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0DD561C724E4B005EDFA1 /* TWRRegularExpressionValidator.m */; };
+		FAB0DD5F1C724E4B005EDFA1 /* TWRRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0DD581C724E4B005EDFA1 /* TWRRequiredValidator.m */; };
+		FAB0DD601C724E4B005EDFA1 /* TWRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0DD5B1C724E4B005EDFA1 /* TWRValidator.m */; };
+		FACB92CE1C6BC29300480957 /* TWRModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB92CC1C6BC29300480957 /* TWRModelAdapter.m */; };
+		FAD11AF61C66A23000ECCF8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD11AF51C66A23000ECCF8C /* Localizable.strings */; };
+		FAD11AFA1C66A78600ECCF8C /* TWRFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD11AF81C66A78600ECCF8C /* TWRFeedViewController.m */; };
+		FAD11AFD1C66A79C00ECCF8C /* TWRFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD11AFC1C66A79C00ECCF8C /* TWRFeedViewController.xib */; };
+		FAD11B031C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD11B011C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.m */; };
+		FAD11B061C66AFB000ECCF8C /* TWRUserFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD11B051C66AFB000ECCF8C /* TWRUserFeedTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA299CA41C6677B400ACD4A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA299C7F1C6677B400ACD4A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA299C861C6677B400ACD4A0;
+			remoteInfo = TweetR;
+		};
+		FA299CAF1C6677B400ACD4A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA299C7F1C6677B400ACD4A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA299C861C6677B400ACD4A0;
+			remoteInfo = TweetR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AE5B3984864CF9F52099E69 /* Pods-TweetRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetRTests/Pods-TweetRTests.release.xcconfig"; sourceTree = "<group>"; };
+		3AB92EA3A41D8385A7CCF160 /* Pods-TweetR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetR.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetR/Pods-TweetR.release.xcconfig"; sourceTree = "<group>"; };
+		4AB3D21CF10C3E23170884C7 /* libPods-TweetRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TweetRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDDA651136B759F6691B237 /* libPods-TweetR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TweetR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0DF87813BE7C746A3598335 /* Pods-TweetRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetRTests/Pods-TweetRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B47DA16ACC20304974A716EF /* Pods-TweetR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetR/Pods-TweetR.debug.xcconfig"; sourceTree = "<group>"; };
+		FA299C871C6677B400ACD4A0 /* TweetR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA299C8B1C6677B400ACD4A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA299C8D1C6677B400ACD4A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA299C8E1C6677B400ACD4A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA299C971C6677B400ACD4A0 /* TweetR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TweetR.xcdatamodel; sourceTree = "<group>"; };
+		FA299C991C6677B400ACD4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA299C9C1C6677B400ACD4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA299C9E1C6677B400ACD4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA299CA31C6677B400ACD4A0 /* TweetRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA299CA71C6677B400ACD4A0 /* TweetRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetRTests.m; sourceTree = "<group>"; };
+		FA299CA91C6677B400ACD4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA299CAE1C6677B400ACD4A0 /* TweetRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA299CB21C6677B400ACD4A0 /* TweetRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetRUITests.m; sourceTree = "<group>"; };
+		FA299CB41C6677B400ACD4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA299CC21C667D7900ACD4A0 /* TWRAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRAuthenticationViewController.h; sourceTree = "<group>"; };
+		FA299CC31C667D7900ACD4A0 /* TWRAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRAuthenticationViewController.m; sourceTree = "<group>"; };
+		FA299CC71C667DBD00ACD4A0 /* TWRAuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRAuthenticationViewController.xib; sourceTree = "<group>"; };
+		FA33DE521C6BA021003743CC /* TWRCoreEntityNameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCoreEntityNameProtocol.h; sourceTree = "<group>"; };
+		FA43F8DB1C6B75A200FB0135 /* TWRUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRUIConstants.h; sourceTree = "<group>"; };
+		FA5445361C722F00006EC1BD /* TWRCoreDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCoreDataClient.h; sourceTree = "<group>"; };
+		FA5445371C722F00006EC1BD /* TWRCoreDataClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCoreDataClient.m; sourceTree = "<group>"; };
+		FA5445381C722F00006EC1BD /* TWRDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRDataStore.h; sourceTree = "<group>"; };
+		FA5445391C722F00006EC1BD /* TWRDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRDataStore.m; sourceTree = "<group>"; };
+		FA54453A1C722F00006EC1BD /* TWRParseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRParseClient.h; sourceTree = "<group>"; };
+		FA54453B1C722F00006EC1BD /* TWRParseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRParseClient.m; sourceTree = "<group>"; };
+		FA54453C1C722F00006EC1BD /* TWRWebServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRWebServiceClient.h; sourceTree = "<group>"; };
+		FA54453D1C722F00006EC1BD /* TWRWebServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRWebServiceClient.m; sourceTree = "<group>"; };
+		FA7025321C67B44C0007D75B /* TWRSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRSignInViewController.h; sourceTree = "<group>"; };
+		FA7025331C67B44C0007D75B /* TWRSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRSignInViewController.m; sourceTree = "<group>"; };
+		FA7025371C67B47A0007D75B /* TWRSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRSignInViewController.xib; sourceTree = "<group>"; };
+		FA7025391C67C1FB0007D75B /* TWRTweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRTweetViewController.h; sourceTree = "<group>"; };
+		FA70253A1C67C1FB0007D75B /* TWRTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRTweetViewController.m; sourceTree = "<group>"; };
+		FA70253E1C67C20D0007D75B /* TWRTweetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRTweetViewController.xib; sourceTree = "<group>"; };
+		FA7F4ECA1C71454B00F1F88E /* TWRBaseFormFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRBaseFormFieldView.h; sourceTree = "<group>"; };
+		FA7F4ECB1C71454B00F1F88E /* TWRBaseFormFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRBaseFormFieldView.m; sourceTree = "<group>"; };
+		FA7F4ECC1C71454B00F1F88E /* TWRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRButton.h; sourceTree = "<group>"; };
+		FA7F4ECD1C71454B00F1F88E /* TWRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRButton.m; sourceTree = "<group>"; };
+		FA7F4ECE1C71454B00F1F88E /* TWRFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRFormView.h; sourceTree = "<group>"; };
+		FA7F4ECF1C71454B00F1F88E /* TWRFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRFormView.m; sourceTree = "<group>"; };
+		FA7F4ED01C71454B00F1F88E /* TWRTextFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRTextFormField.h; sourceTree = "<group>"; };
+		FA7F4ED11C71454B00F1F88E /* TWRTextFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRTextFormField.m; sourceTree = "<group>"; };
+		FA7F4ED71C71456700F1F88E /* TWRTextFormField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRTextFormField.xib; sourceTree = "<group>"; };
+		FA7F4EDA1C714CA300F1F88E /* TWRFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWRFonts.h; sourceTree = "<group>"; };
+		FA7F4EDE1C715C2200F1F88E /* TWRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRConstants.h; sourceTree = "<group>"; };
+		FA7F4EDF1C715C2200F1F88E /* TWRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRConstants.m; sourceTree = "<group>"; };
+		FA95A8381C66858600BDB681 /* TWRAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRAuthenticationManager.h; sourceTree = "<group>"; };
+		FA95A8391C66858600BDB681 /* TWRAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRAuthenticationManager.m; sourceTree = "<group>"; };
+		FA95A83B1C668E2C00BDB681 /* TWRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRSignUpViewController.h; sourceTree = "<group>"; };
+		FA95A83C1C668E2C00BDB681 /* TWRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRSignUpViewController.m; sourceTree = "<group>"; };
+		FA95A8401C668E4700BDB681 /* TWRSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRSignUpViewController.xib; sourceTree = "<group>"; };
+		FA95A8421C66903800BDB681 /* TWRErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRErrorHandler.h; sourceTree = "<group>"; };
+		FA95A8431C66903800BDB681 /* TWRErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRErrorHandler.m; sourceTree = "<group>"; };
+		FA95A8481C6699EF00BDB681 /* TWRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRBaseViewController.h; sourceTree = "<group>"; };
+		FA95A8491C6699EF00BDB681 /* TWRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRBaseViewController.m; sourceTree = "<group>"; };
+		FA9CB10D1C692EAC00ABCB4D /* TWRColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWRColors.h; sourceTree = "<group>"; };
+		FA9CB1191C69403000ABCB4D /* TWRTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRTweet.h; sourceTree = "<group>"; };
+		FA9CB11A1C69403000ABCB4D /* TWRTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRTweet.m; sourceTree = "<group>"; };
+		FA9CB11B1C69403000ABCB4D /* TWRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRUser.h; sourceTree = "<group>"; };
+		FA9CB11C1C69403000ABCB4D /* TWRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRUser.m; sourceTree = "<group>"; };
+		FA9CB1211C69406100ABCB4D /* TWRTweetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRTweetViewModel.h; sourceTree = "<group>"; };
+		FA9CB1221C69406100ABCB4D /* TWRTweetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRTweetViewModel.m; sourceTree = "<group>"; };
+		FA9CB1241C69423000ABCB4D /* TWRCDUser+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWRCDUser+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FA9CB1251C69423000ABCB4D /* TWRCDUser+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TWRCDUser+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FA9CB1261C69423000ABCB4D /* TWRCDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCDUser.h; sourceTree = "<group>"; };
+		FA9CB1271C69423000ABCB4D /* TWRCDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCDUser.m; sourceTree = "<group>"; };
+		FA9CB1281C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWRCDTweet+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FA9CB1291C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TWRCDTweet+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FA9CB12A1C69423000ABCB4D /* TWRCDTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCDTweet.h; sourceTree = "<group>"; };
+		FA9CB12B1C69423000ABCB4D /* TWRCDTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCDTweet.m; sourceTree = "<group>"; };
+		FAB0DD511C724E4B005EDFA1 /* TWRCompareValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCompareValidator.h; sourceTree = "<group>"; };
+		FAB0DD521C724E4B005EDFA1 /* TWRCompareValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCompareValidator.m; sourceTree = "<group>"; };
+		FAB0DD531C724E4B005EDFA1 /* TWRErrorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRErrorProvider.h; sourceTree = "<group>"; };
+		FAB0DD541C724E4B005EDFA1 /* TWRErrorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRErrorProvider.m; sourceTree = "<group>"; };
+		FAB0DD551C724E4B005EDFA1 /* TWRRegularExpressionValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRRegularExpressionValidator.h; sourceTree = "<group>"; };
+		FAB0DD561C724E4B005EDFA1 /* TWRRegularExpressionValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRRegularExpressionValidator.m; sourceTree = "<group>"; };
+		FAB0DD571C724E4B005EDFA1 /* TWRRequiredValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRRequiredValidator.h; sourceTree = "<group>"; };
+		FAB0DD581C724E4B005EDFA1 /* TWRRequiredValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRRequiredValidator.m; sourceTree = "<group>"; };
+		FAB0DD591C724E4B005EDFA1 /* TWRValidatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRValidatable.h; sourceTree = "<group>"; };
+		FAB0DD5A1C724E4B005EDFA1 /* TWRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRValidator.h; sourceTree = "<group>"; };
+		FAB0DD5B1C724E4B005EDFA1 /* TWRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRValidator.m; sourceTree = "<group>"; };
+		FACB92CC1C6BC29300480957 /* TWRModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRModelAdapter.m; sourceTree = "<group>"; };
+		FACB92CD1C6BC29300480957 /* TWRModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRModelAdapter.h; sourceTree = "<group>"; };
+		FAD11AF51C66A23000ECCF8C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FAD11AF71C66A78600ECCF8C /* TWRFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRFeedViewController.h; sourceTree = "<group>"; };
+		FAD11AF81C66A78600ECCF8C /* TWRFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRFeedViewController.m; sourceTree = "<group>"; };
+		FAD11AFC1C66A79C00ECCF8C /* TWRFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRFeedViewController.xib; sourceTree = "<group>"; };
+		FAD11B001C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRUserFeedTableViewCell.h; sourceTree = "<group>"; };
+		FAD11B011C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRUserFeedTableViewCell.m; sourceTree = "<group>"; };
+		FAD11B051C66AFB000ECCF8C /* TWRUserFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWRUserFeedTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA299C841C6677B400ACD4A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BFDC3023155EE9483CE388 /* libPods-TweetR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA299CA01C6677B400ACD4A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA84FDF0C55F4FAF05E79510 /* libPods-TweetRTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA299CAB1C6677B400ACD4A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5FFD37B9020E835F9FC67D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0DF87813BE7C746A3598335 /* Pods-TweetRTests.debug.xcconfig */,
+				0AE5B3984864CF9F52099E69 /* Pods-TweetRTests.release.xcconfig */,
+				B47DA16ACC20304974A716EF /* Pods-TweetR.debug.xcconfig */,
+				3AB92EA3A41D8385A7CCF160 /* Pods-TweetR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65A5F118A7BE4656CFC1378F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AB3D21CF10C3E23170884C7 /* libPods-TweetRTests.a */,
+				5BDDA651136B759F6691B237 /* libPods-TweetR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA299C7E1C6677B400ACD4A0 = {
+			isa = PBXGroup;
+			children = (
+				FA299C891C6677B400ACD4A0 /* TweetR */,
+				FA299CA61C6677B400ACD4A0 /* TweetRTests */,
+				FA299CB11C6677B400ACD4A0 /* TweetRUITests */,
+				FA299C881C6677B400ACD4A0 /* Products */,
+				0B5FFD37B9020E835F9FC67D /* Pods */,
+				65A5F118A7BE4656CFC1378F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA299C881C6677B400ACD4A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA299C871C6677B400ACD4A0 /* TweetR.app */,
+				FA299CA31C6677B400ACD4A0 /* TweetRTests.xctest */,
+				FA299CAE1C6677B400ACD4A0 /* TweetRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA299C891C6677B400ACD4A0 /* TweetR */ = {
+			isa = PBXGroup;
+			children = (
+				FA5445351C722F00006EC1BD /* DataProviders */,
+				FA7F4EAB1C6FC29900F1F88E /* UIComponents */,
+				FA9CB1111C693FEB00ABCB4D /* Models */,
+				FA9CB10C1C692E2600ABCB4D /* Theming */,
+				FAD11B121C66B23B00ECCF8C /* ModelAdapters */,
+				FAD11AFF1C66AF8000ECCF8C /* CellNibs */,
+				FAD11AFE1C66AF7B00ECCF8C /* Cells */,
+				FA95A8371C66855800BDB681 /* Utilities */,
+				FA299CC01C667C6200ACD4A0 /* ViewControllerNibs */,
+				FA299CC11C667C6200ACD4A0 /* ViewControllers */,
+				FA299C8D1C6677B400ACD4A0 /* AppDelegate.h */,
+				FA299C8E1C6677B400ACD4A0 /* AppDelegate.m */,
+				FA299C991C6677B400ACD4A0 /* Assets.xcassets */,
+				FA299C9B1C6677B400ACD4A0 /* LaunchScreen.storyboard */,
+				FA299C9E1C6677B400ACD4A0 /* Info.plist */,
+				FA299C961C6677B400ACD4A0 /* TweetR.xcdatamodeld */,
+				FA299C8A1C6677B400ACD4A0 /* Supporting Files */,
+				FAD11AF51C66A23000ECCF8C /* Localizable.strings */,
+			);
+			path = TweetR;
+			sourceTree = "<group>";
+		};
+		FA299C8A1C6677B400ACD4A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA299C8B1C6677B400ACD4A0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA299CA61C6677B400ACD4A0 /* TweetRTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA299CA71C6677B400ACD4A0 /* TweetRTests.m */,
+				FA299CA91C6677B400ACD4A0 /* Info.plist */,
+			);
+			path = TweetRTests;
+			sourceTree = "<group>";
+		};
+		FA299CB11C6677B400ACD4A0 /* TweetRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA299CB21C6677B400ACD4A0 /* TweetRUITests.m */,
+				FA299CB41C6677B400ACD4A0 /* Info.plist */,
+			);
+			path = TweetRUITests;
+			sourceTree = "<group>";
+		};
+		FA299CC01C667C6200ACD4A0 /* ViewControllerNibs */ = {
+			isa = PBXGroup;
+			children = (
+				FA299CC71C667DBD00ACD4A0 /* TWRAuthenticationViewController.xib */,
+				FA95A8401C668E4700BDB681 /* TWRSignUpViewController.xib */,
+				FAD11AFC1C66A79C00ECCF8C /* TWRFeedViewController.xib */,
+				FA7025371C67B47A0007D75B /* TWRSignInViewController.xib */,
+				FA70253E1C67C20D0007D75B /* TWRTweetViewController.xib */,
+			);
+			path = ViewControllerNibs;
+			sourceTree = "<group>";
+		};
+		FA299CC11C667C6200ACD4A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA299CC21C667D7900ACD4A0 /* TWRAuthenticationViewController.h */,
+				FA299CC31C667D7900ACD4A0 /* TWRAuthenticationViewController.m */,
+				FA95A83B1C668E2C00BDB681 /* TWRSignUpViewController.h */,
+				FA95A83C1C668E2C00BDB681 /* TWRSignUpViewController.m */,
+				FA95A8481C6699EF00BDB681 /* TWRBaseViewController.h */,
+				FA95A8491C6699EF00BDB681 /* TWRBaseViewController.m */,
+				FAD11AF71C66A78600ECCF8C /* TWRFeedViewController.h */,
+				FAD11AF81C66A78600ECCF8C /* TWRFeedViewController.m */,
+				FA7025321C67B44C0007D75B /* TWRSignInViewController.h */,
+				FA7025331C67B44C0007D75B /* TWRSignInViewController.m */,
+				FA7025391C67C1FB0007D75B /* TWRTweetViewController.h */,
+				FA70253A1C67C1FB0007D75B /* TWRTweetViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA5445351C722F00006EC1BD /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				FA5445361C722F00006EC1BD /* TWRCoreDataClient.h */,
+				FA5445371C722F00006EC1BD /* TWRCoreDataClient.m */,
+				FA5445381C722F00006EC1BD /* TWRDataStore.h */,
+				FA5445391C722F00006EC1BD /* TWRDataStore.m */,
+				FA54453A1C722F00006EC1BD /* TWRParseClient.h */,
+				FA54453B1C722F00006EC1BD /* TWRParseClient.m */,
+				FA54453C1C722F00006EC1BD /* TWRWebServiceClient.h */,
+				FA54453D1C722F00006EC1BD /* TWRWebServiceClient.m */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		FA7F4EAB1C6FC29900F1F88E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F4EC91C71454B00F1F88E /* Classes */,
+				FA7F4ED21C71454B00F1F88E /* Nibs */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FA7F4EC91C71454B00F1F88E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F4ECA1C71454B00F1F88E /* TWRBaseFormFieldView.h */,
+				FA7F4ECB1C71454B00F1F88E /* TWRBaseFormFieldView.m */,
+				FA7F4ECC1C71454B00F1F88E /* TWRButton.h */,
+				FA7F4ECD1C71454B00F1F88E /* TWRButton.m */,
+				FA7F4ECE1C71454B00F1F88E /* TWRFormView.h */,
+				FA7F4ECF1C71454B00F1F88E /* TWRFormView.m */,
+				FA7F4ED01C71454B00F1F88E /* TWRTextFormField.h */,
+				FA7F4ED11C71454B00F1F88E /* TWRTextFormField.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA7F4ED21C71454B00F1F88E /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F4ED71C71456700F1F88E /* TWRTextFormField.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		FA95A8371C66855800BDB681 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0DD501C724E4B005EDFA1 /* Form Validation */,
+				FA95A8381C66858600BDB681 /* TWRAuthenticationManager.h */,
+				FA95A8391C66858600BDB681 /* TWRAuthenticationManager.m */,
+				FA95A8421C66903800BDB681 /* TWRErrorHandler.h */,
+				FA95A8431C66903800BDB681 /* TWRErrorHandler.m */,
+				FA7F4EDE1C715C2200F1F88E /* TWRConstants.h */,
+				FA7F4EDF1C715C2200F1F88E /* TWRConstants.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FA9CB10C1C692E2600ABCB4D /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				FA9CB10D1C692EAC00ABCB4D /* TWRColors.h */,
+				FA43F8DB1C6B75A200FB0135 /* TWRUIConstants.h */,
+				FA7F4EDA1C714CA300F1F88E /* TWRFonts.h */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		FA9CB1111C693FEB00ABCB4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA9CB1201C69406100ABCB4D /* ViewModels */,
+				FA9CB11F1C69404300ABCB4D /* CoreDataModels */,
+				FA9CB1181C69403000ABCB4D /* ParseModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA9CB1181C69403000ABCB4D /* ParseModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA9CB1191C69403000ABCB4D /* TWRTweet.h */,
+				FA9CB11A1C69403000ABCB4D /* TWRTweet.m */,
+				FA9CB11B1C69403000ABCB4D /* TWRUser.h */,
+				FA9CB11C1C69403000ABCB4D /* TWRUser.m */,
+			);
+			path = ParseModels;
+			sourceTree = "<group>";
+		};
+		FA9CB11F1C69404300ABCB4D /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA9CB1241C69423000ABCB4D /* TWRCDUser+CoreDataProperties.h */,
+				FA9CB1251C69423000ABCB4D /* TWRCDUser+CoreDataProperties.m */,
+				FA9CB1261C69423000ABCB4D /* TWRCDUser.h */,
+				FA9CB1271C69423000ABCB4D /* TWRCDUser.m */,
+				FA9CB1281C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.h */,
+				FA9CB1291C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.m */,
+				FA9CB12A1C69423000ABCB4D /* TWRCDTweet.h */,
+				FA9CB12B1C69423000ABCB4D /* TWRCDTweet.m */,
+				FA33DE521C6BA021003743CC /* TWRCoreEntityNameProtocol.h */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		FA9CB1201C69406100ABCB4D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA9CB1211C69406100ABCB4D /* TWRTweetViewModel.h */,
+				FA9CB1221C69406100ABCB4D /* TWRTweetViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FAB0DD501C724E4B005EDFA1 /* Form Validation */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0DD511C724E4B005EDFA1 /* TWRCompareValidator.h */,
+				FAB0DD521C724E4B005EDFA1 /* TWRCompareValidator.m */,
+				FAB0DD531C724E4B005EDFA1 /* TWRErrorProvider.h */,
+				FAB0DD541C724E4B005EDFA1 /* TWRErrorProvider.m */,
+				FAB0DD551C724E4B005EDFA1 /* TWRRegularExpressionValidator.h */,
+				FAB0DD561C724E4B005EDFA1 /* TWRRegularExpressionValidator.m */,
+				FAB0DD571C724E4B005EDFA1 /* TWRRequiredValidator.h */,
+				FAB0DD581C724E4B005EDFA1 /* TWRRequiredValidator.m */,
+				FAB0DD591C724E4B005EDFA1 /* TWRValidatable.h */,
+				FAB0DD5A1C724E4B005EDFA1 /* TWRValidator.h */,
+				FAB0DD5B1C724E4B005EDFA1 /* TWRValidator.m */,
+			);
+			path = "Form Validation";
+			sourceTree = "<group>";
+		};
+		FAD11AFE1C66AF7B00ECCF8C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAD11B001C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.h */,
+				FAD11B011C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAD11AFF1C66AF8000ECCF8C /* CellNibs */ = {
+			isa = PBXGroup;
+			children = (
+				FAD11B051C66AFB000ECCF8C /* TWRUserFeedTableViewCell.xib */,
+			);
+			path = CellNibs;
+			sourceTree = "<group>";
+		};
+		FAD11B121C66B23B00ECCF8C /* ModelAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				FACB92CD1C6BC29300480957 /* TWRModelAdapter.h */,
+				FACB92CC1C6BC29300480957 /* TWRModelAdapter.m */,
+			);
+			path = ModelAdapters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA299C861C6677B400ACD4A0 /* TweetR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA299CB71C6677B400ACD4A0 /* Build configuration list for PBXNativeTarget "TweetR" */;
+			buildPhases = (
+				3B960C28FC2DD2743C1AD554 /* Check Pods Manifest.lock */,
+				FA299C831C6677B400ACD4A0 /* Sources */,
+				FA299C841C6677B400ACD4A0 /* Frameworks */,
+				FA299C851C6677B400ACD4A0 /* Resources */,
+				828799EF4CB6871916F8917F /* Embed Pods Frameworks */,
+				237D44304013EF17BEFAAF0A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetR;
+			productName = TweetR;
+			productReference = FA299C871C6677B400ACD4A0 /* TweetR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA299CA21C6677B400ACD4A0 /* TweetRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA299CBA1C6677B400ACD4A0 /* Build configuration list for PBXNativeTarget "TweetRTests" */;
+			buildPhases = (
+				8781AFF6BC81587880FD3580 /* Check Pods Manifest.lock */,
+				FA299C9F1C6677B400ACD4A0 /* Sources */,
+				FA299CA01C6677B400ACD4A0 /* Frameworks */,
+				FA299CA11C6677B400ACD4A0 /* Resources */,
+				C5BC8854FF05C331CF6A9910 /* Embed Pods Frameworks */,
+				8BEA93D79C57AC732585407C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA299CA51C6677B400ACD4A0 /* PBXTargetDependency */,
+			);
+			name = TweetRTests;
+			productName = TweetRTests;
+			productReference = FA299CA31C6677B400ACD4A0 /* TweetRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA299CAD1C6677B400ACD4A0 /* TweetRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA299CBD1C6677B400ACD4A0 /* Build configuration list for PBXNativeTarget "TweetRUITests" */;
+			buildPhases = (
+				FA299CAA1C6677B400ACD4A0 /* Sources */,
+				FA299CAB1C6677B400ACD4A0 /* Frameworks */,
+				FA299CAC1C6677B400ACD4A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA299CB01C6677B400ACD4A0 /* PBXTargetDependency */,
+			);
+			name = TweetRUITests;
+			productName = TweetRUITests;
+			productReference = FA299CAE1C6677B400ACD4A0 /* TweetRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA299C7F1C6677B400ACD4A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Alex Shavialevich";
+				TargetAttributes = {
+					FA299C861C6677B400ACD4A0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FA299CA21C6677B400ACD4A0 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FA299C861C6677B400ACD4A0;
+					};
+					FA299CAD1C6677B400ACD4A0 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FA299C861C6677B400ACD4A0;
+					};
+				};
+			};
+			buildConfigurationList = FA299C821C6677B400ACD4A0 /* Build configuration list for PBXProject "TweetR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA299C7E1C6677B400ACD4A0;
+			productRefGroup = FA299C881C6677B400ACD4A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA299C861C6677B400ACD4A0 /* TweetR */,
+				FA299CA21C6677B400ACD4A0 /* TweetRTests */,
+				FA299CAD1C6677B400ACD4A0 /* TweetRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA299C851C6677B400ACD4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7025381C67B47A0007D75B /* TWRSignInViewController.xib in Resources */,
+				FAD11AF61C66A23000ECCF8C /* Localizable.strings in Resources */,
+				FAD11AFD1C66A79C00ECCF8C /* TWRFeedViewController.xib in Resources */,
+				FA299CC81C667DBD00ACD4A0 /* TWRAuthenticationViewController.xib in Resources */,
+				FAD11B061C66AFB000ECCF8C /* TWRUserFeedTableViewCell.xib in Resources */,
+				FA299C9D1C6677B400ACD4A0 /* LaunchScreen.storyboard in Resources */,
+				FA7F4ED81C71456700F1F88E /* TWRTextFormField.xib in Resources */,
+				FA95A8411C668E4700BDB681 /* TWRSignUpViewController.xib in Resources */,
+				FA299C9A1C6677B400ACD4A0 /* Assets.xcassets in Resources */,
+				FA70253F1C67C20D0007D75B /* TWRTweetViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA299CA11C6677B400ACD4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA299CAC1C6677B400ACD4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		237D44304013EF17BEFAAF0A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetR/Pods-TweetR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B960C28FC2DD2743C1AD554 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		828799EF4CB6871916F8917F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetR/Pods-TweetR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8781AFF6BC81587880FD3580 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BEA93D79C57AC732585407C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetRTests/Pods-TweetRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5BC8854FF05C331CF6A9910 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetRTests/Pods-TweetRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA299C831C6677B400ACD4A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7025351C67B44C0007D75B /* TWRSignInViewController.m in Sources */,
+				FA299CC51C667D7900ACD4A0 /* TWRAuthenticationViewController.m in Sources */,
+				FAD11B031C66AF9C00ECCF8C /* TWRUserFeedTableViewCell.m in Sources */,
+				FA9CB1231C69406100ABCB4D /* TWRTweetViewModel.m in Sources */,
+				FA5445401C722F00006EC1BD /* TWRParseClient.m in Sources */,
+				FA299C8F1C6677B400ACD4A0 /* AppDelegate.m in Sources */,
+				FA70253C1C67C1FB0007D75B /* TWRTweetViewController.m in Sources */,
+				FA7F4ED61C71454B00F1F88E /* TWRTextFormField.m in Sources */,
+				FA5445411C722F00006EC1BD /* TWRWebServiceClient.m in Sources */,
+				FA54453E1C722F00006EC1BD /* TWRCoreDataClient.m in Sources */,
+				FA9CB12F1C69423000ABCB4D /* TWRCDTweet.m in Sources */,
+				FA9CB12D1C69423000ABCB4D /* TWRCDUser.m in Sources */,
+				FAB0DD5C1C724E4B005EDFA1 /* TWRCompareValidator.m in Sources */,
+				FAD11AFA1C66A78600ECCF8C /* TWRFeedViewController.m in Sources */,
+				FACB92CE1C6BC29300480957 /* TWRModelAdapter.m in Sources */,
+				FA54453F1C722F00006EC1BD /* TWRDataStore.m in Sources */,
+				FA9CB12E1C69423000ABCB4D /* TWRCDTweet+CoreDataProperties.m in Sources */,
+				FA9CB11E1C69403000ABCB4D /* TWRUser.m in Sources */,
+				FA95A83E1C668E2C00BDB681 /* TWRSignUpViewController.m in Sources */,
+				FA9CB12C1C69423000ABCB4D /* TWRCDUser+CoreDataProperties.m in Sources */,
+				FA7F4ED51C71454B00F1F88E /* TWRFormView.m in Sources */,
+				FA7F4ED31C71454B00F1F88E /* TWRBaseFormFieldView.m in Sources */,
+				FAB0DD601C724E4B005EDFA1 /* TWRValidator.m in Sources */,
+				FAB0DD5D1C724E4B005EDFA1 /* TWRErrorProvider.m in Sources */,
+				FA95A84A1C6699EF00BDB681 /* TWRBaseViewController.m in Sources */,
+				FA9CB11D1C69403000ABCB4D /* TWRTweet.m in Sources */,
+				FA95A8441C66903800BDB681 /* TWRErrorHandler.m in Sources */,
+				FA299C981C6677B400ACD4A0 /* TweetR.xcdatamodeld in Sources */,
+				FA7F4EE01C715C2200F1F88E /* TWRConstants.m in Sources */,
+				FA95A83A1C66858600BDB681 /* TWRAuthenticationManager.m in Sources */,
+				FA7F4ED41C71454B00F1F88E /* TWRButton.m in Sources */,
+				FA299C8C1C6677B400ACD4A0 /* main.m in Sources */,
+				FAB0DD5F1C724E4B005EDFA1 /* TWRRequiredValidator.m in Sources */,
+				FAB0DD5E1C724E4B005EDFA1 /* TWRRegularExpressionValidator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA299C9F1C6677B400ACD4A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA299CA81C6677B400ACD4A0 /* TweetRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA299CAA1C6677B400ACD4A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA299CB31C6677B400ACD4A0 /* TweetRUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA299CA51C6677B400ACD4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA299C861C6677B400ACD4A0 /* TweetR */;
+			targetProxy = FA299CA41C6677B400ACD4A0 /* PBXContainerItemProxy */;
+		};
+		FA299CB01C6677B400ACD4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA299C861C6677B400ACD4A0 /* TweetR */;
+			targetProxy = FA299CAF1C6677B400ACD4A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA299C9B1C6677B400ACD4A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA299C9C1C6677B400ACD4A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA299CB51C6677B400ACD4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA299CB61C6677B400ACD4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA299CB81C6677B400ACD4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47DA16ACC20304974A716EF /* Pods-TweetR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TweetR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shavialevich.alex.TweetR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA299CB91C6677B400ACD4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB92EA3A41D8385A7CCF160 /* Pods-TweetR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TweetR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shavialevich.alex.TweetR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA299CBB1C6677B400ACD4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DF87813BE7C746A3598335 /* Pods-TweetRTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TweetRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shavialevich.alex.TweetRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetR.app/TweetR";
+			};
+			name = Debug;
+		};
+		FA299CBC1C6677B400ACD4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE5B3984864CF9F52099E69 /* Pods-TweetRTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TweetRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shavialevich.alex.TweetRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetR.app/TweetR";
+			};
+			name = Release;
+		};
+		FA299CBE1C6677B400ACD4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TweetRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shavialevich.alex.TweetRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TweetR;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FA299CBF1C6677B400ACD4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TweetRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shavialevich.alex.TweetRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TweetR;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA299C821C6677B400ACD4A0 /* Build configuration list for PBXProject "TweetR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA299CB51C6677B400ACD4A0 /* Debug */,
+				FA299CB61C6677B400ACD4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA299CB71C6677B400ACD4A0 /* Build configuration list for PBXNativeTarget "TweetR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA299CB81C6677B400ACD4A0 /* Debug */,
+				FA299CB91C6677B400ACD4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA299CBA1C6677B400ACD4A0 /* Build configuration list for PBXNativeTarget "TweetRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA299CBB1C6677B400ACD4A0 /* Debug */,
+				FA299CBC1C6677B400ACD4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA299CBD1C6677B400ACD4A0 /* Build configuration list for PBXNativeTarget "TweetRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA299CBE1C6677B400ACD4A0 /* Debug */,
+				FA299CBF1C6677B400ACD4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA299C961C6677B400ACD4A0 /* TweetR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA299C971C6677B400ACD4A0 /* TweetR.xcdatamodel */,
+			);
+			currentVersion = FA299C971C6677B400ACD4A0 /* TweetR.xcdatamodel */;
+			path = TweetR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA299C7F1C6677B400ACD4A0 /* Project object */;
+}
